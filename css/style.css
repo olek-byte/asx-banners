@@ -1,0 +1,272 @@
+/* GLOBAL STYLES ================================= */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.woff2"),
+        url("../fonts/Montserrat-Bold.woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-SemiBold.woff2"),
+        url("../fonts/Montserrat-SemiBold.woff");
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src: url("../fonts/EncodeSans-Bold.woff2"),
+        url("../fonts/EncodeSans-Bold.woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src:
+        url("../fonts/EncodeSans-SemiBold.woff2"),
+        url("../fonts/EncodeSans-SemiBold.woff");
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src:
+        url("../fonts/EncodeSans-Medium.woff2"),
+        url("../fonts/EncodeSans-Medium.woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src:
+        url("../fonts/EncodeSans-Regular.woff2"),
+        url("../fonts/EncodeSans-Regular.woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src:
+        url("../fonts/EncodeSans-Light.woff2"),
+        url("../fonts/EncodeSans-Light.woff");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --btn-color-hover: #008FC5;
+    --btn-color: #00AFF0;
+
+    --title-dark: #2F3135;
+    --text-grey: #6B7078;
+    --active-tab: #0E9A6F;
+    --step-color: #858D9D;
+    --video-link-bcg: - #F8F8F8;
+    --library-span-color: #111111;
+    --grey-bcg: #F8F8F8;
+    --border-color: #DADCE1;
+}
+
+body {
+    overflow-x: clip;
+    font-style: normal;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-grey);
+}
+
+.sidebar {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.btn.primary:hover {
+    background-color: #f98500;
+    border-color: var(--btn-color-hover);
+}
+
+.sidebar .sidebar__btn {
+    margin-bottom: 37px;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+}
+
+.sidebar .sidebar__btn {
+    margin-bottom: 0;
+}
+
+.sidebar .sidebar__card {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar__title {
+    color: var(--white);
+}
+
+.sidebar__text {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.sidebar__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar__title {
+    margin-bottom: 24px;
+}
+
+.sidebar__card {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    margin: 0 0 0 auto;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 367px;
+    /* min-height: 508px; */
+    background-color: #1189FF;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.sidebar__linkedin {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px 12px 24px 14px;
+    transition: 0.5s background-color;
+}
+
+.sidebar__linkedin:hover {
+    text-decoration: none;
+    background-color: #f4f5f7;
+}
+
+.linkedin__img {
+    width: 74px;
+    background-color: #fff;
+    border-radius: 46px;
+    object-fit: cover;
+    /* border: 1px solid #DCE5EE; */
+    border-radius: 46px;
+
+    transition: none;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.linkedin__icon {
+    position: absolute;
+    bottom: 0;
+    right: -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar__text-box {
+    margin-left: 25px;
+    text-align: left;
+}
+
+
+.sidebar__span {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #416182;
+    font-family: 'Encode Sans', sans-serif;
+    letter-spacing: 0.13px;
+}
+
+.sidebar .btn {
+    background-color: #FF9E00;
+    max-width: 100%;
+}
+
+.sidebar__name {
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    color: #416182;
+    line-height: 140%;
+    margin-bottom: 5px;
+}
+
+.sidebar__card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* BREAKPOINTS ============================= */
+@media (min-width: 992px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .sidebar__card {
+        padding: 20px;
+    }
+
+    .sidebar__title {
+        margin-bottom: 14px;
+        line-height: 125%;
+    }
+
+    .sidebar__linkedin {
+        margin-bottom: 15px;
+    }
+
+    .sidebar__linkedin {
+        padding: 14px;
+    }
+
+
+    .sidebar__title {
+        font-size: 20px;
+    }
+
+    .sidebar__name {
+        font-size: 16px;
+    }
+
+    .sidebar__span {
+        font-size: 11px;
+        line-height: 135%;
+    }
+
+    .sidebar__text-box {
+        margin-left: 14px;
+    }
+
+}
